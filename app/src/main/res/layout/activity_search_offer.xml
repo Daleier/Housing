@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_prov"
+        android:layout_alignBaseline="@id/provincia"
+        android:text="@string/provincia" />
+
+    <Spinner
+        android:id="@+id/provincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@id/edit_prov"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/array_provincias"
+        android:imeOptions="actionNext"
+        android:spinnerMode="dialog" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/provincia"
+        android:layout_alignBaseline="@id/provincia"
+        android:id="@+id/check_provincia"
+        android:layout_marginLeft="10sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/provincia"
+        android:id="@+id/edit_personas"
+        android:text="@string/num_total_personas"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@id/num_total_personas"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/num_total_personas"
+        android:layout_below="@id/provincia"
+        android:layout_alignStart="@id/provincia"
+        android:layout_alignEnd="@id/provincia"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:maxLength="2"
+        android:inputType="number"
+        android:text="1"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_personas"
+        android:layout_below="@id/check_provincia"
+        android:layout_alignStart="@id/check_provincia"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fecha"
+        android:id="@+id/edit_fecha"
+        android:text="@string/fecha"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha"
+        android:layout_alignStart="@id/provincia"
+        android:layout_alignEnd="@id/provincia"
+        android:layout_below="@id/num_total_personas"
+        android:maxLines="1"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check_fecha"
+        android:layout_alignStart="@id/check_provincia"
+        android:layout_alignBottom="@id/fecha"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buscar"
+        android:layout_below="@id/fecha"
+        android:text="@string/buscar"
+        android:drawableLeft="@drawable/baseline_search_white_24dp"
+        android:drawablePadding="@dimen/draw_padding"
+        />
+
+</RelativeLayout>

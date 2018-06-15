@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "827357063459",
+    "firebase_url": "https://housing-f987d.firebaseio.com",
+    "project_id": "housing-f987d",
+    "storage_bucket": "housing-f987d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827357063459:android:3dc9058efa53b360",
+        "android_client_info": {
+          "package_name": "com.example.dam203.housing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827357063459-nfnk96f8dpqvq68trsbfp1angapbc9fq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dam203.housing",
+            "certificate_hash": "bf1ca66eb04cc458a2f9002fe9df98239ae9a4b1"
+          }
+        },
+        {
+          "client_id": "827357063459-tih72eucr8anpd1bmpposatpkb20is9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkXcjWu1bYlOfGXQPPEcbAQmWJmpRsCsw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827357063459-tih72eucr8anpd1bmpposatpkb20is9e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

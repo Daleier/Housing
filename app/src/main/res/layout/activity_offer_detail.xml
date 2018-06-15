@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="2dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo"
+                    android:textSize="@dimen/list_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/finalizado"
+                    android:textSize="@dimen/text_mediano"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño"
+                android:text="@string/descripcion_detalle"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion"
+                android:textSize="@dimen/text_mediano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño"
+                android:text="@string/provincia"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:id="@+id/provincia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/provincia"
+                android:textSize="@dimen/text_mediano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño"
+                android:text="@string/cp_detalle"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:id="@+id/cp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp"
+                android:textSize="@dimen/text_mediano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño"
+                android:text="@string/direccion_detalle"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:id="@+id/direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cp"
+                android:textSize="@dimen/text_mediano" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_pequeño"
+                        android:text="@string/data_inicio_detalle"
+                        android:textSize="@dimen/list_text_size" />
+
+                    <TextView
+                        android:id="@+id/fecha_inicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_pequeño"
+                        android:text="@string/data_inicio"
+                        android:textSize="@dimen/text_mediano" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_pequeño"
+                        android:text="@string/data_fin_detalle"
+                        android:textSize="@dimen/list_text_size" />
+
+                    <TextView
+                        android:id="@+id/fecha_fin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_pequeño"
+                        android:text="@string/data_fin"
+                        android:textSize="@dimen/text_mediano" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño"
+                android:text="@string/precio_dia_detalle"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/precio_dia"
+                android:textSize="@dimen/text_mediano" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño"
+                android:text="@string/maximo_personas_detalle"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:id="@+id/maximo_personas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maximo_personas"
+                android:textSize="@dimen/text_mediano" />
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/max_imgview_height" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_pequeño"
+                android:layout_marginTop="@dimen/margin_pequeño">
+
+                <Button
+                    android:id="@+id/nueva_oferta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:drawableLeft="@drawable/baseline_add_circle_white_24dp"
+                    android:drawablePadding="@dimen/draw_padding"
+                    android:text="@string/nueva_oferta_detalle" />
+
+                <Button
+                    android:id="@+id/reservar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/baseline_event_white_24dp"
+                    android:drawablePadding="@dimen/draw_padding"
+                    android:text="@string/reservar" />
+
+                <Button
+                    android:id="@+id/nueva_reseña"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/baseline_add_circle_white_24dp"
+                    android:drawablePadding="@dimen/draw_padding"
+                    android:text="@string/nueva_reseña" />
+
+                <Button
+                    android:id="@+id/eliminar_oferta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableLeft="@drawable/baseline_delete_white_24dp"
+                    android:drawablePadding="@dimen/draw_padding"
+                    android:text="@string/eliminar_oferta" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/puntuaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño"
+                android:text="@string/puntuacion" />
+
+            <TextView
+                android:id="@+id/text_reseñas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pequeño"
+                android:text="@string/reseñas"
+                android:textSize="@dimen/list_text_size"
+                android:textStyle="bold" />
+
+            <com.example.dam203.housing.model.NonScrollListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_pequeño">5dp</dimen>
+    <dimen name="margin_mediano">7dp</dimen>
+    <dimen name="padding_login">10dp</dimen>
+    <dimen name="edit_login">200dp</dimen>
+    <dimen name="list_text_size">20dp</dimen>
+    <dimen name="text_mediano">15dp</dimen>
+    <dimen name="max_imgview_height">400dp</dimen>
+    <dimen name="draw_padding">5dp</dimen>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_margin="5dp"
+        >
+        <TableRow>
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo"
+                android:textSize="@dimen/list_text_size"
+                android:textStyle="bold"
+                android:layout_span="2"/>
+
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/precio_dia"
+                android:textSize="@dimen/list_text_size"
+                android:gravity="end"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/provincia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/provincia"
+                android:textSize="@dimen/list_text_size"/>
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha"
+                android:textSize="@dimen/list_text_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/reseñas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/puntuacion"
+                android:textSize="@dimen/list_text_size"
+                android:layout_span="2"
+                />
+            <TextView
+                android:id="@+id/puntuacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/puntuacion"
+                android:textSize="@dimen/list_text_size"
+                android:gravity="end"
+                />
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_span="3"/>
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

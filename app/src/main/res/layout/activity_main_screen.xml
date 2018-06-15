@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/añadir_oferta"
+                android:text="@string/añadir_oferta"
+                android:drawableLeft="@drawable/baseline_add_circle_white_24dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ver_oferta"
+                android:text="@string/buscar_casa"
+                android:drawableLeft="@drawable/baseline_search_white_24dp"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mis_ofertas"
+                android:text="@string/mis_ofertas"
+                android:drawableLeft="@drawable/baseline_home_white_24dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ofertas_aceptadas"
+                android:text="@string/mis_reservas"
+                android:drawableStart="@drawable/baseline_event_white_24dp"/>
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

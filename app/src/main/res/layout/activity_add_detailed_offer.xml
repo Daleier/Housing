@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_inicio_detalle"
+        android:textSize="@dimen/list_text_size"/>
+
+    <EditText
+        android:id="@+id/data_inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="@string/data_inicio"
+        android:inputType="date"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_fin_detalle"
+        android:textSize="@dimen/list_text_size"/>
+
+    <EditText
+        android:id="@+id/data_fin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="@string/data_fin"
+        android:inputType="date"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/precio_dia_detalle"
+        android:textSize="@dimen/list_text_size"/>
+
+    <EditText
+        android:id="@+id/precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/precio_dia"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionNext"
+        />
+
+    <Button
+        android:id="@+id/crear_oferta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/crear_oferta"
+        android:drawableLeft="@drawable/baseline_add_circle_white_24dp"
+        android:drawablePadding="@dimen/draw_padding"/>
+</LinearLayout>

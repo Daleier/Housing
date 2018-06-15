@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dam203.housing">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".controler.UserLoginScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controler.UserRegisterScreen"></activity>
+        <activity android:name=".controler.MainScreen"></activity>
+        <activity android:name=".controler.UserEditScreen"></activity>
+        <activity android:name=".controler.AddNewOfferScreen"></activity>
+        <activity android:name=".controler.ListMyOffersScreen"></activity>
+        <activity android:name=".controler.ListAceptOffersScreen"></activity>
+        <activity android:name=".controler.ListReservations"></activity>
+        <activity android:name=".controler.SearchOfferScreen"></activity>
+        <activity android:name=".controler.DetailAceptOfferScreen"></activity>
+        <activity android:name=".controler.DetailMyOfferScreen"></activity>
+        <activity android:name=".controler.AddDetaildOfferScreen"></activity>
+        <activity android:name=".controler.DetailReservationScreen"></activity>
+        <activity android:name=".controler.AddCommentScreen"></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+</manifest>

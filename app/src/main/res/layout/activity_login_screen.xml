@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dam203.housing.controler.UserLoginScreen">
+
+    <EditText
+        android:layout_width="@dimen/edit_login"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/password"
+        android:id="@+id/login"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_login"
+        android:imeOptions="actionNext"
+        android:drawableLeft="@drawable/baseline_email_black_24dp"
+        android:drawablePadding="@dimen/draw_padding"
+        />
+
+
+    <EditText
+        android:layout_width="@dimen/edit_login"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/password"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_login"
+        android:imeOptions="actionDone"
+        android:drawableLeft="@drawable/baseline_lock_black_24dp"
+        android:drawablePadding="@dimen/draw_padding"
+        />
+
+    <Button
+        android:layout_marginTop="@dimen/margin_mediano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:id="@+id/login_button"
+        android:text="@string/iniciar_sesion"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_login"
+        android:drawableLeft="@drawable/baseline_person_white_24dp"
+        android:drawablePadding="@dimen/draw_padding"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/login_button"
+        android:layout_alignEnd="@id/login_button"
+        android:layout_below="@id/login_button"
+        android:id="@+id/registrar_button"
+        android:text="@string/registrar"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_login"
+        android:drawableLeft="@drawable/baseline_person_add_white_24dp"
+        android:drawablePadding="@dimen/draw_padding"
+        />
+</RelativeLayout>
